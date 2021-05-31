@@ -1,16 +1,17 @@
 """
-https://drive.google.com/file/d/1pIR6vCjN1aYUuXFeIz0jfwgHYGi9J7s-/view?usp=sharing
+https://drive.google.com/file/d/15yosa5gl_aqK5eaS_HFSmQfiTBIyBz93/view?usp=sharing
 
-3.По введенным пользователем координатам двух точек вывести уравнение прямой вида y = kx + b, проходящей через эти точки.
+2.По введенным пользователем координатам двух точек вывести уравнение прямой вида y = kx + b, проходящей
+через эти точки.
 """
 
-t = input("Введи любую строчную букву русского алфавита: ")
+x1 = float(input("Введи X первой точки: "))
+y1 = float(input("Введи Y первой точки: "))
+x2 = float(input("Введи X второй точки: "))
+y2 = float(input("Введи Y второй точки: "))
 
-let_order = ord(t) - 1071
-if let_order > 6:
-    if let_order == 34:
-        let_order = 7
-    else:
-        let_order += 1
+a = y1 - y2
+b = x2 - x1
+c = x1*y2 - x2*y1
 
-print(f"Порядковый номер буквы \"{t}\" - {let_order}")
+print(f'у={a/b}x {"+" if c/b > 0 else ""}{c/b}')
