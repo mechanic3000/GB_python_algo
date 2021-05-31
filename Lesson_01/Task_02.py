@@ -14,4 +14,4 @@ a = y1 - y2
 b = x2 - x1
 c = x1*y2 - x2*y1
 
-print(f'у={a/b}x {"+" if c/b > 0 else ""}{c/b}')
+print(f'у={-1*a/b}x {"+" if -1*c/b > 0 else ""}{-1*c/b}')
