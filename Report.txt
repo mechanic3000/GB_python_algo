@@ -1,3 +1,6 @@
+Python v 3.7.3 (default, Mar  6 2020, 22:34:30)
+[Clang 11.0.3 (clang-1103.0.32.29)] (darwin)
+
 ###
 Task_01_01
 18232 B
